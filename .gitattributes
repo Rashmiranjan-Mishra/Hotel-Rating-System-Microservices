@@ -1,3 +1,10 @@
+# Tell GitHub to detect .java files
 *.java linguist-detectable=true
+
+# Exclude all HTML and JavaScript files from language stats
 *.html linguist-detectable=false
-apache-jmeter-5.5/* linguist-vendored
+*.js linguist-detectable=false
+
+# Exclude vendored folders (e.g. JMeter, node_modules, etc.)
+apache-jmeter-5.5/** linguist-vendored
+**/node_modules/** linguist-vendored
